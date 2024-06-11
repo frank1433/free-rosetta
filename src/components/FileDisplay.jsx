@@ -18,8 +18,9 @@ export default function FileDisplay(props) {
 
 
     return (
-        <main className='flex-1  p-4 flex flex-col gap-3 text-center sm:gap-4 justify-center pb-20 w-full max-w-prose mx-auto'>
+        <main className='flex-1  p-4 flex flex-col gap-3 text-center sm:gap-4  justify-center pb-20'>
             <h1 className='font-semibold text-4xl sm:text-5xl md:text-6xl'>Your <span className='text-blue-400 bold'>Voice</span></h1>
+            <h2 className='font-semibold text-3xl text-indigo-500'>A ML-powered multilingual <span className ='text-orange-400 bold'>speech recognition</span> app </h2>
             <div className=' flex flex-col text-left my-4'>
                 <h3 className='font-semibold'>Name</h3>
                 <p className='truncate'>{file ? file?.name : 'Custom audio'}</p>
